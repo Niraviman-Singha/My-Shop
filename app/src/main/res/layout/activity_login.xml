@@ -42,6 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="phone"
+            android:maxLength="11"
             android:textColor="@color/black">
 
 
@@ -58,16 +59,6 @@
 
     </Button>
 
-    <ProgressBar
-        android:layout_width="33dp"
-        android:layout_height="33dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:visibility="gone"
-        android:layout_marginBottom="10dp"
-        android:id="@+id/progressBar">
-
-    </ProgressBar>
 
 
 </RelativeLayout>
