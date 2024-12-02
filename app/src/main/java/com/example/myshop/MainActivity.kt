@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity() {
 
         supportFragmentManager.beginTransaction().apply {
             add(R.id.main_frame, productsFragment, "Product")
-            add(R.id.main_frame, likeFragment, "Like")
-            add(R.id.main_frame, cartFragment, "Cart")
-            add(R.id.main_frame, profileFragment, "Profile")
+            add(R.id.main_frame, likeFragment, "Like").hide(likeFragment)
+            add(R.id.main_frame, cartFragment, "Cart").hide(cartFragment)
+            add(R.id.main_frame, profileFragment, "Profile").hide(profileFragment)
         }.commit()
 
         binding.mainBottomView.setOnItemSelectedListener {
